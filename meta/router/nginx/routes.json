@@ -1,0 +1,23 @@
+[
+  {
+    "domain": "frontend.local.gluestack.app",
+    "port": 7002,
+    "locations": [
+      {
+        "path": "/(.*)",
+        "proxy_instance": "frontend:9000",
+        "proxy_path": "/$1",
+        "size_in_mb": "50",
+        "packageName": "@gluestack/glue-plugin-web",
+        "instance": "frontend",
+        "routes": [
+          {
+            "method": "GET",
+            "path": "/"
+          }
+        ],
+        "instancePath": "/Users/sandeepkumar/code/work/application/gluestack/examples/prisma-glue/frontend"
+      }
+    ]
+  }
+]

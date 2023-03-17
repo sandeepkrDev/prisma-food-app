@@ -12,5 +12,12 @@
       "directory": "./meta/router/nginx",
       "container_store": {}
     }
+  ],
+  "@gluestack/glue-plugin-web": [
+    {
+      "instance": "frontend",
+      "directory": "./frontend",
+      "container_store": {}
+    }
   ]
 }

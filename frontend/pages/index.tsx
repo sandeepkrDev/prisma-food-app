@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Meta = () => {
   return (
@@ -39,8 +40,7 @@ const Example = () => {
       </div>
       <main className='flex flex-1 flex-col items-center justify-between  text-center mx-5 my-16 lg:mx-32 lg:my-24  z-10 '>
         <p className='self-center md:self-start  font-normal text-white bg-[#64748B33] py-2 px-6 rounded-full'>
-          Get started by editing{' '}
-          <code className='p-1 font-mono font-medium'>pages/index.tsx</code>
+          Get started with <Link href={"/foods"}>Food App.</Link>
         </p>
         <div className='absolute h-[400px] w-[300px] lg:h-[700px] lg:w-[400px]'>
           <Image src='/logo.svg' fill alt='logo' priority />

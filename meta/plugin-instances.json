@@ -19,5 +19,12 @@
       "directory": "./frontend",
       "container_store": {}
     }
+  ],
+  "@gluestack/glue-plugin-postgres": [
+    {
+      "instance": "postgres",
+      "directory": "./backend/databases/postgres",
+      "container_store": {}
+    }
   ]
 }
